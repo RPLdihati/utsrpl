@@ -7,7 +7,7 @@ package utsrpl.DesignPattern3;
 
 /**
  *
- * @author Gusti Aditya AF
+
  */
 public abstract class TemplateMethode {
        public final void Cupcake()
