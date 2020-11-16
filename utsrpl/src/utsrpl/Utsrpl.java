@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import utsrpl.DesignPattern3.ChocolateCeresCupcake;
+import utsrpl.DesignPattern3.RedloveCupcake;
 import utsrpl.DesignPattern3.TemplateMethode;
 import utsrpl.DesignPattern3.VanillaSweetCupcake;
 
@@ -66,10 +68,18 @@ public class Utsrpl {
                    break   ;
             case 2:
                 System.out.println("Chocho Ceres Cupcake\n");
+                      TemplateMethode coco = new ChocolateCeresCupcake();
+                   coco.Cupcake();
+                   
+                   break   ;
                     
             case 3:
                    System.out.println("Red Love Cupcake \n");
-                        break   ;
+                   TemplateMethode red = new RedloveCupcake();
+                   red.Cupcake();
+                   
+                   break   ;
+                  
             default:System.out.println("Pilihan tidak tersedia");
             
         }
