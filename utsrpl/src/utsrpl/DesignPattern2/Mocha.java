@@ -12,7 +12,7 @@ package utsrpl.DesignPattern2;
 public class Mocha extends minumandingin{
 
     @Override
-    public String getNama() {return "Mocha";}
+    public String getNama() {return "Mocha\t";}
 
     
      public Integer getUkuran(){

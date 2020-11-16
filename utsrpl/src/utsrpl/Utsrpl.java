@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import utsrpl.DesignPattern1.CatalogAdapter;
+import utsrpl.DesignPattern1.minumandinginadapter;
+import utsrpl.DesignPattern1.minumanpanasadapter;
 import utsrpl.DesignPattern2.Americano;
 import utsrpl.DesignPattern2.Coffe;
 import utsrpl.DesignPattern2.Espresso;
@@ -49,7 +52,17 @@ public class Utsrpl {
         pilihan =sc.nextInt();
        
         if(pilihan==1){
-          
+           System.out.println("Gusti Aditya A F(Adpter)");
+            List<CatalogAdapter> list = new ArrayList<>();
+                list.add(new minumanpanasadapter(new Espresso()));
+                list.add(new minumanpanasadapter(new Americano()));
+                list.add(new minumandinginadapter(new Macchiato()));
+                list.add(new minumandinginadapter(new Mocha()));
+
+                list.forEach(item -> {
+
+                    System.out.println(item.Catalogmenu());
+                });
         }
         else if(pilihan==2){
             
