@@ -1,5 +1,7 @@
 package utsrpl.DesignPattern1;
 
+import utsrpl.DesignPattern2.minumandingin;
+
 public class minumandinginadapter implements CatalogAdapter{
 
     private minumandingin minumandingin;
