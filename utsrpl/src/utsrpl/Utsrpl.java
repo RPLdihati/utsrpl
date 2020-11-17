@@ -9,6 +9,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import utsrpl.DesignPattern2.Americano;
+import utsrpl.DesignPattern2.Coffe;
+import utsrpl.DesignPattern2.Espresso;
+import utsrpl.DesignPattern2.Macchiato;
+import utsrpl.DesignPattern2.Mocha;
+import utsrpl.DesignPattern2.minumandingin;
+import utsrpl.DesignPattern2.minumanpanas;
 import utsrpl.DesignPattern3.ChocolateCeresCupcake;
 import utsrpl.DesignPattern3.RedloveCupcake;
 import utsrpl.DesignPattern3.TemplateMethode;
@@ -45,6 +52,28 @@ public class Utsrpl {
           
         }
         else if(pilihan==2){
+            
+            List<Coffe> coffes = Arrays.asList(
+        new Espresso(),
+        new Americano(),
+        new Macchiato(),
+        new Mocha()
+        );
+        
+        coffes.forEach(coffe -> {
+            
+           if(coffe instanceof minumanpanas){
+               minumanpanas Minump = (minumanpanas) coffe;
+               System.out.println(Minump.getNama() + " Adalah Minuman Panas dengan Ukuran " +Minump.getUkuran()+
+                       " Dengan harga " +Minump.getHarga());
+           }
+           else if (coffe instanceof minumandingin){
+               minumandingin Minumd = (minumandingin) coffe;
+              System.out.println(Minumd.getNama() + " Adalah Minuman Panas dengan Ukuran " +Minumd.getUkuran()+
+                       " Dengan harga " +Minumd.getHarga());
+               
+           } 
+        });
                
            } 
      
