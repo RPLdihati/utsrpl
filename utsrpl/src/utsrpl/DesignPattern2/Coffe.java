@@ -7,8 +7,11 @@ package utsrpl.DesignPattern2;
 
 /**
  *
- * @author Gusti Aditya AF
+ * @author USER
  */
-public class NewClass {
+public interface Coffe {
+    String getNama();
+    boolean MinumanDingin();
+    boolean MinumanPanas();
     
 }
